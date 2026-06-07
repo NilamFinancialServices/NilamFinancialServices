@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisory Services - Nilam Financial Services</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300">
+
+  <!-- ==========================================
+       sticky navigation bar
+       ========================================== -->
+  <nav class="sticky top-0 z-40 w-full glass-nav shadow-sm backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
+            <i class="fas fa-landmark text-lg"></i>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-lg font-extrabold leading-none tracking-tight bg-gradient-to-r from-indigo-600 to-cyan-500 dark:from-indigo-400 dark:to-cyan-400 bg-clip-text text-transparent font-heading">
+              Nilam Financial
+            </span>
+            <span class="text-[10px] font-bold tracking-widest text-slate-400 dark:text-slate-500 uppercase">
+              Services
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex space-x-1 h-full items-center">
+          <a href="index.html" class="nav-link tab-transition px-4 py-2 border-b-2 border-transparent text-sm font-semibold rounded-md text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            Home
+          </a>
+          <a href="products.html" class="nav-link tab-transition px-4 py-2 border-b-2 border-transparent text-sm font-semibold rounded-md text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            Products
+          </a>
+          <a href="services.html" class="nav-link tab-transition px-4 py-2 border-b-2 border-transparent text-sm font-semibold rounded-md text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            Services
+          </a>
+          <a href="#testimonials" class="nav-link tab-transition px-4 py-2 border-b-2 border-transparent text-sm font-semibold rounded-md text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            Testimonials
+          </a>
+          <a href="#contact" class="nav-link tab-transition px-4 py-2 border-b-2 border-transparent text-sm font-semibold rounded-md text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">
+            Contact
+          </a>
+        </div>
+
+        <!-- Right Side Controls -->
+        <div class="flex items-center gap-4">
+          <!-- Light/Dark Toggle -->
+          <button id="theme-toggle" class="w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+            <i id="theme-icon" class="fas fa-sun text-amber-400"></i>
+          </button>
+
+          <!-- Call to Action -->
+          <a href="#contact" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-lg shadow-indigo-500/20 transition">
+            Get Started
+          </a>
+
+          <!-- Mobile menu trigger -->
+          <button id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+            <i class="fas fa-bars text-slate-600 dark:text-slate-400"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 py-4 space-y-1">
+      <a href="index.html" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-3">
+        <i class="fas fa-house-chimney w-5 text-center"></i> Home
+      </a>
+      <a href="products.html" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-3">
+        <i class="fas fa-layer-group w-5 text-center"></i> Products
+      </a>
+      <a href="services.html" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-3">
+        <i class="fas fa-briefcase w-5 text-center"></i> Services
+      </a>
+      <a href="#testimonials" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-3">
+        <i class="fas fa-comment-dots w-5 text-center"></i> Testimonials
+      </a>
+      <a href="#contact" class="mobile-nav-link w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-3">
+        <i class="fas fa-envelope w-5 text-center"></i> Contact
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       SERVICES GRID SECTION
+       ========================================== -->
+  <section id="offerings" class="py-20 bg-slate-50 dark:bg-slate-950 flex-grow relative">
+    <div class="accent-glow left-10 top-10"></div>
+    <div class="accent-glow right-10 bottom-10"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="border-b border-slate-200 dark:border-slate-800 pb-6">
+        <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest block font-heading">Advisory Portfolio</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-950 dark:text-white mt-2">Expert Advisory Services</h1>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Professional planning, analysis, and check-ups structured by certified advisors to manage your financial health.</p>
+      </div>
+
+      <!-- Services Grid Container -->
+      <div id="services-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Rendered by app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS SECTION
+       ========================================== -->
+  <section id="testimonials" class="py-24 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 relative">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest block mb-3">Client Success Stories</span>
+      
+      <div class="relative min-h-[220px] flex items-center justify-center">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-slide space-y-6">
+          <p class="text-lg md:text-xl font-medium text-slate-700 dark:text-slate-300 italic leading-relaxed">
+            "Nilam's Loan Assessment review redesigned our corporate credit structure, dropping our financing rate by 1.4% and saving our business nearly $80,000 annually. An invaluable consulting partner."
+          </p>
+          <div>
+            <h4 class="font-bold text-slate-950 dark:text-white">Sarah Miller</h4>
+            <p class="text-xs text-slate-500">Managing Director, Innovate Ventures</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-slide hidden space-y-6">
+          <p class="text-lg md:text-xl font-medium text-slate-700 dark:text-slate-300 italic leading-relaxed">
+            "The Loan Against Mutual Funds setup Nilam structured allowed us to secure temporary liquidity to buy additional commercial space without liquidating our equity holdings. Simply exceptional advice."
+          </p>
+          <div>
+            <h4 class="font-bold text-slate-950 dark:text-white">Robert K. Chen</h4>
+            <p class="text-xs text-slate-500">Founder, Chen Realty Partners</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="flex items-center justify-center gap-3 mt-8">
+        <button id="test-prev" class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+          <i class="fas fa-chevron-left text-xs"></i>
+        </button>
+        <button id="test-next" class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+          <i class="fas fa-chevron-right text-xs"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT SECTION
+       ========================================== -->
+  <section id="contact" class="py-24 bg-slate-50 dark:bg-slate-950 relative border-t border-slate-100 dark:border-slate-800">
+    <div class="accent-glow left-1/4 top-1/3"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest block">Request a Consultation</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-950 dark:text-white">Ready to Optimize Your Strategy?</h2>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Fill in the booking form with your contact parameters, and Nilam will schedule a one-on-one consultation with you to map out your solution.
+          </p>
+          
+          <div class="space-y-4 pt-4">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">advisory@nilamfinancial.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">Financial Hub, Suite 402, New York, NY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Form Column -->
+        <div class="lg:col-span-7">
+          <div class="glass-card rounded-3xl p-8 shadow-xl">
+            <h3 class="text-xl font-bold text-slate-950 dark:text-white mb-6">Book Your Strategy Session</h3>
+            <form id="consultation-form" class="space-y-5">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Full Name</label>
+                  <input id="client-name" type="text" required placeholder="John Doe" class="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm text-slate-950 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                </div>
+                <div>
+                  <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Email Address</label>
+                  <input id="client-email" type="email" required placeholder="john@example.com" class="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm text-slate-950 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                </div>
+              </div>
+              <div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Interested Product / Service</label>
+                <select id="selected-service" required class="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm text-slate-950 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                  <!-- Generated Dynamically with groups -->
+                </select>
+              </div>
+              <div>
+                <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Message / Overview of Request</label>
+                <textarea id="client-msg" rows="4" placeholder="Briefly describe your objectives..." class="w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm text-slate-950 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/30 transition duration-300">
+                  Request Strategy Session
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+      <div class="flex items-center justify-center gap-2">
+        <div class="w-6 h-6 rounded bg-indigo-600 flex items-center justify-center text-white text-xs">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <span class="font-bold text-sm text-slate-900 dark:text-white font-heading">Nilam Financial Services</span>
+      </div>
+      <p class="text-xs text-slate-500 dark:text-slate-400">
+        &copy; 2026 Nilam Financial Services. All rights reserved. Wealth advisory solutions designed with precision.
+      </p>
+    </div>
+  </footer>
+
+  <!-- App logic -->
+  <script src="app.js"></script>
+</body>
+</html>
