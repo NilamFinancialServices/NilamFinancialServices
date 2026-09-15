@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilam Financial Services | Home - Wealth Management & Advisory Jamnagar</title>
+  <meta name="description" content="Nilam Financial Services - Trusted financial planning, mutual funds, insurance, PMS, loan against mutual funds & tax advisory in Jamnagar, Gujarat. Managed by Manoj Maniyar (Managing Director) & Kushal Maniyar (CEO).">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="Logo.jpeg">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="header-main">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-group">
+        <img src="Logo.jpeg" alt="Nilam Financial Services Logo" class="brand-logo-img">
+        <div class="brand-title-box">
+          <span class="brand-name">Nilam Financial Services</span>
+          <span class="brand-tagline">Wealth Management & Advisory</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/917041943490?text=Hello%20Nilam%20Financial%20Services,%20I%20would%20like%20to%20schedule%20a%20financial%20consultation." target="_blank" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.9rem;">
+          <i class="fa-brands fa-whatsapp"></i> Book Consultation
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo-group">
+        <img src="Logo.jpeg" alt="Nilam Financial Services Logo" style="height: 42px;">
+        <span class="brand-name" style="font-size: 1.1rem;">Nilam Financial</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link active">Home</a>
+      <a href="products.html" class="drawer-link">Products</a>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="testimonials.html" class="drawer-link">Testimonials</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="https://wa.me/917041943490" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+        <i class="fa-brands fa-whatsapp"></i> Connect on WhatsApp
+      </a>
+      <a href="mailto:nilamfinancialservices@gmail.com" class="btn btn-outline" style="width: 100%;">
+        <i class="fa-solid fa-envelope"></i> Send Email
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge badge-hero" style="margin-bottom: 0.5rem;">
+            <i class="fa-solid fa-shield-halved"></i> Trusted Financial Partners in Jamnagar
+          </span>
+          <h1>Empowering Your <span>Financial Freedom</span> & Growth</h1>
+          <p class="hero-lead">
+            Tailored investment advisory, wealth creation, mutual funds, PMS, loans & comprehensive risk protection designed for families, business owners, and NRIs.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-secondary">
+              <i class="fa-solid fa-chart-line"></i> Explore Products
+            </a>
+            <a href="https://wa.me/917041943490?text=Hello,%20I%20want%20to%20get%20a%20Free%20Wealth%20Check-Up." target="_blank" class="btn btn-outline" style="color: var(--white); border-color: var(--white);">
+              <i class="fa-solid fa-calendar-check"></i> Free Wealth Check-Up
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>31+</h4>
+              <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+              <h4>50+ Cr</h4>
+              <p>AUA (Asset Under Advisory)</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Tailored Advisory</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive SIP Calculator Card -->
+        <div class="hero-card">
+          <h3><i class="fa-solid fa-calculator"></i> Quick SIP Growth Calculator</h3>
+          <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Visualize how small monthly investments accumulate into massive wealth.
+          </p>
+          
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>Monthly Investment</span>
+              <span class="calc-value-badge" id="monthlyVal">₹10,000</span>
+            </div>
+            <input type="range" class="calc-slider" id="monthlyInvestment" min="1000" max="100000" step="1000" value="10000">
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>Expected Annual Return</span>
+              <span class="calc-value-badge" id="returnVal">12%</span>
+            </div>
+            <input type="range" class="calc-slider" id="expectedReturn" min="6" max="20" step="0.5" value="12">
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>Investment Duration</span>
+              <span class="calc-value-badge" id="yearsVal">15 Years</span>
+            </div>
+            <input type="range" class="calc-slider" id="tenureYears" min="1" max="30" step="1" value="15">
+          </div>
+
+          <div class="calc-result-box">
+            <p>Projected Wealth Value</p>
+            <h2 id="resultMaturity">₹50,45,760</h2>
+            <div style="display: flex; justify-content: space-around; margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-muted);">
+              <div>Invested: <strong id="resultInvested" style="color: var(--text-dark);">₹18,000,00</strong></div>
+              <div>Est. Returns: <strong id="resultGains" style="color: var(--primary);">₹32,45,760</strong></div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/917041943490?text=Hello,%20I%20used%20the%20SIP%20calculator%20on%20your%20website%20and%20want%20to%20start%20my%20SIP." target="_blank" class="btn btn-primary" style="width: 100%; margin-top: 1.25rem;">
+            <i class="fa-solid fa-bolt"></i> Start Investment Plan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP SECTION -->
+    <section class="leadership-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Leadership & Vision</span>
+          <h2>Guided by Industry Veterans</h2>
+          <p>At Nilam Financial Services, our senior leadership brings decades of market experience, ethical stewardship, and dedicated client-centric advisory.</p>
+        </div>
+
+        <div class="leadership-grid">
+          <div class="leader-card">
+            <span class="leader-badge">Managing Director</span>
+            <h3 class="leader-name">Manoj Maniyar</h3>
+            <p class="leader-title">Managing Director & Wealth Strategist</p>
+            <p class="leader-quote">
+              "Financial security isn't just about accumulation; it is about structuring your capital to withstand market cycles while securing your family's future."
+            </p>
+          </div>
+
+          <div class="leader-card">
+            <span class="leader-badge">Chief Executive Officer</span>
+            <h3 class="leader-name">Kushal Maniyar</h3>
+            <p class="leader-title">CEO & Investment Principal</p>
+            <p class="leader-quote">
+              "We leverage modern analytical tools and personalized portfolio structuring to deliver consistent risk-adjusted returns tailored to each client's life goals."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHTS (PRODUCTS & SERVICES) -->
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-secondary">Core Offerings</span>
+          <h2>Products & Advisory Services Overview</h2>
+          <p>Discover how we help you build, protect, and manage your wealth effectively.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-header-row">
+              <div class="service-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3 class="service-title">Mutual Funds & Equity</h3>
+            </div>
+            <p class="service-body">SIPs, Equity advisory, Sectoral ETFs, and Tax-Saving ELSS investments for wealth growth.</p>
+            <a href="products.html" class="btn btn-outline" style="width: 100%;">View Products</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header-row">
+              <div class="service-icon-box"><i class="fa-solid fa-shield-heart"></i></div>
+              <h3 class="service-title">Insurance Solutions</h3>
+            </div>
+            <p class="service-body">Complete term life protection, family health plans, and commercial general insurance coverage.</p>
+            <a href="products.html" class="btn btn-outline" style="width: 100%;">View Insurance</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-header-row">
+              <div class="service-icon-box"><i class="fa-solid fa-stethoscope"></i></div>
+              <h3 class="service-title">Wealth & Risk Assessment</h3>
+            </div>
+            <p class="service-body">In-depth financial diagnostic audits, retirement projections, and child future planning.</p>
+            <a href="services.html" class="btn btn-outline" style="width: 100%;">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section style="padding: 0 0 5rem 0; background: var(--bg-light);">
+      <div class="container">
+        <div class="assessment-banner">
+          <div class="assessment-content">
+            <h3>Schedule a Personal Consultation</h3>
+            <p>Get direct guidance from Manoj Maniyar (Managing Director) or Kushal Maniyar (CEO) in Jamnagar.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary" style="white-space: nowrap;">
+            <i class="fa-solid fa-paper-plane"></i> Contact Us Today
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Floating WhatsApp Button -->
+  <a href="https://wa.me/917041943490?text=Hello%20Nilam%20Financial%20Services,%20I%20am%20visiting%20your%20website%20and%20need%20assistance." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo-group" style="margin-bottom: 1rem;">
+            <img src="Logo.jpeg" alt="Nilam Financial Services Logo" style="height: 48px; border-radius: var(--radius-sm);">
+            <span class="brand-name" style="color: var(--white);">Nilam Financial</span>
+          </div>
+          <p>
+            Nilam Financial Services is a premier wealth management and financial advisory firm based in Jamnagar, Gujarat. Managed by Manoj Maniyar (Managing Director) & Kushal Maniyar (CEO).
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Our Products</a>
+            <a href="services.html">Our Services</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Our Products</h4>
+          <div class="footer-links">
+            <a href="products.html">Mutual Funds</a>
+            <a href="products.html">Equity & ETF</a>
+            <a href="products.html">Insurance (Life/Health)</a>
+            <a href="products.html">PMS Services</a>
+            <a href="products.html">Bonds & FDs</a>
+            <a href="products.html">Loan Against Mutual Funds</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Information</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.9rem; color: #B2CDC2;">
+            <p><i class="fa-solid fa-location-dot" style="color: #F0A288; margin-right: 0.5rem;"></i> 230-231, 2nd Floor, Neo Square, Jamnagar - 361005</p>
+            <p><i class="fa-solid fa-envelope" style="color: #F0A288; margin-right: 0.5rem;"></i> <a href="mailto:nilamfinancialservices@gmail.com" style="color: inherit;">nilamfinancialservices@gmail.com</a></p>
+            <p><i class="fa-brands fa-whatsapp" style="color: #25D366; margin-right: 0.5rem;"></i> <a href="https://wa.me/917041943490" target="_blank" style="color: inherit;">+91 70419 43490</a></p>
+            <p><i class="fa-solid fa-clock" style="color: #F0A288; margin-right: 0.5rem;"></i> Mon - Sat: 10 AM - 7 PM (Sun Closed)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nilam Financial Services. All rights reserved.</p>
+        <p>Jamnagar, Gujarat, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
